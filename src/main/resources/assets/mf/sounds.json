@@ -1,0 +1,11 @@
+{
+  "be_aware_of_furries": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "mf:be_aware_of_furries",
+        "stream": true
+      }
+    ]
+  }
+}

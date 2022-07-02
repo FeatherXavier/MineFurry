@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "000",
+    " 1 ",
+    "222"
+  ],
+  "key": {
+    "0": {
+      "item": "mf:item_fur"
+    },
+    "1": {
+      "item": "mf:item_glue"
+    },
+    "2": {
+      "item": "mf:item_cloth"
+    }
+  },
+  "result": {
+    "item": "mf:fur_fabric",
+    "count": 3
+  }
+}
