@@ -4,12 +4,13 @@ import net.minecraft.world.entity.decoration.Motive;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import org.jetbrains.annotations.NotNull;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PaintingsRegistryHandler
 {
     @SubscribeEvent
-    public static void registerMotives(RegistryEvent.Register<Motive> event)
+    public static void registerMotives(RegistryEvent.@NotNull Register<Motive> event)
     {
         event.getRegistry().register(new Motive(16, 16).setRegistryName("img_0000"));
         event.getRegistry().register(new Motive(32, 32).setRegistryName("img_0001"));
@@ -21,5 +22,8 @@ public class PaintingsRegistryHandler
         event.getRegistry().register(new Motive(48, 64).setRegistryName("img_0007"));
         event.getRegistry().register(new Motive(16, 32).setRegistryName("img_0008"));
         event.getRegistry().register(new Motive(32, 32).setRegistryName("img_0009"));
+        event.getRegistry().register(new Motive(80, 64).setRegistryName("img_0010"));
+        event.getRegistry().register(new Motive(80, 64).setRegistryName("img_0011"));
+        event.getRegistry().register(new Motive(80, 64).setRegistryName("img_0012"));
     }
 }
