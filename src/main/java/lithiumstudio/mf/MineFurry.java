@@ -1,6 +1,7 @@
 package lithiumstudio.mf;
 
 import com.mojang.logging.LogUtils;
+import lithiumstudio.mf.init.EntityRegistryHandler;
 import lithiumstudio.mf.init.ItemRegistryHandler;
 import lithiumstudio.mf.init.TabRegistryHandler;
 import net.minecraft.world.level.block.Block;
@@ -34,6 +35,9 @@ public class MineFurry
 
         TabRegistryHandler.load();
 
+        EntityRegistryHandler.ENTITY_TYPES.register(bus);
+
+
     }
 
     private void setup(final FMLCommonSetupEvent event)
@@ -50,7 +54,7 @@ public class MineFurry
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent)
         {
             // Register a new block here
-            LOGGER.info("HELLO from Register Block");
+            LOGGER.info("uwu");
         }
     }
 }

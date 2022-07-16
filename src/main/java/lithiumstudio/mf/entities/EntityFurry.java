@@ -25,23 +25,20 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
-//import lithiumstudio.mf.init.EntityRegistryHandler;
+import lithiumstudio.mf.init.EntityRegistryHandler;
 import org.jetbrains.annotations.NotNull;
 
-//import static lithiumstudio.mf.init.EntityRegistryHandler.*;
+import static lithiumstudio.mf.init.EntityRegistryHandler.*;
 
-/*
+
 @Mod.EventBusSubscriber
 public class EntityFurry extends PathfinderMob
 {
+
     @SubscribeEvent
     public static void addLivingEntityToBiomes(BiomeLoadingEvent event)
     {
         event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ENTITY_FURRY.get(), 20, 4, 4));
-    }
-
-    public EntityFurry(PlayMessages.SpawnEntity packet, Level world) {
-        this(ENTITY_FURRY.get(), world);
     }
 
     public EntityFurry(EntityType<EntityFurry> type, Level world)
@@ -103,5 +100,5 @@ public class EntityFurry extends PathfinderMob
     }
 }
 
-*/
+
 

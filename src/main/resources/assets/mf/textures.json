@@ -1,0 +1,10 @@
+{
+  "fur_suit": {
+    "category": "texture",
+    "textures": [
+      {
+        "name": "mf:fur_suit"
+      }
+    ]
+  }
+}
