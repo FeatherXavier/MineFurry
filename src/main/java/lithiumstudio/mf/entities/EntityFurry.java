@@ -38,7 +38,7 @@ public class EntityFurry extends PathfinderMob
     @SubscribeEvent
     public static void addLivingEntityToBiomes(BiomeLoadingEvent event)
     {
-        event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ENTITY_FURRY.get(), 20, 4, 4));
+        event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ENTITY_FURRY.get(), 1, 1, 2));
     }
 
     public EntityFurry(EntityType<EntityFurry> type, Level world)

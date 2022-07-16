@@ -25,5 +25,6 @@ public class PaintingsRegistryHandler
         event.getRegistry().register(new Motive(80, 64).setRegistryName("img_0010"));
         event.getRegistry().register(new Motive(80, 64).setRegistryName("img_0011"));
         event.getRegistry().register(new Motive(80, 64).setRegistryName("img_0012"));
+        event.getRegistry().register(new Motive(32, 48).setRegistryName("img_0013"));
     }
 }
