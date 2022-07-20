@@ -3,12 +3,9 @@ package lithiumstudio.mf;
 import com.mojang.logging.LogUtils;
 import lithiumstudio.mf.init.EntityRegistryHandler;
 import lithiumstudio.mf.init.ItemRegistryHandler;
-import lithiumstudio.mf.init.TabRegistryHandler;
-import net.minecraft.world.level.block.Block;
+import lithiumstudio.mf.init.SoundRegistryHandler;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -33,9 +30,12 @@ public class MineFurry
 
         ItemRegistryHandler.REGISTRY.register(bus);
 
-        TabRegistryHandler.load();
+        // Register a new block here
+        // BlockRegistryHandler.REGISTRY.register(bus);
 
         EntityRegistryHandler.ENTITY_TYPES.register(bus);
+
+        SoundRegistryHandler.SOUNDS.register(bus);
 
 
     }
@@ -45,16 +45,5 @@ public class MineFurry
         // some preinit code
         LOGGER.info("Mine Furry mod loaded.");
         LOGGER.info("Warning! This mod is still in alpha progress!");
-    }
-
-    @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-    public static class RegistryEvents
-    {
-        @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent)
-        {
-            // Register a new block here
-            LOGGER.info("uwu");
-        }
     }
 }

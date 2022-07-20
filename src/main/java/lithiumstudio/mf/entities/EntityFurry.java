@@ -1,5 +1,6 @@
 package lithiumstudio.mf.entities;
 
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.*;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
@@ -76,12 +77,12 @@ public class EntityFurry extends PathfinderMob
 
     @Override
     public SoundEvent getHurtSound(@NotNull DamageSource ds) {
-        return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+        return SoundEvents.GENERIC_HURT;
     }
 
     @Override
     public SoundEvent getDeathSound() {
-        return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+        return SoundEvents.GENERIC_DEATH;
     }
 
     public static void init() {

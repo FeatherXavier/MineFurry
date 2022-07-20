@@ -38,8 +38,7 @@ description='''
 对了，所有的README都要看清楚哦
 
 '''
-
-[[dependencies.furry]]
+[[dependencies.mf]]
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version

@@ -25,16 +25,10 @@ import static lithiumstudio.mf.MineFurry.MODID;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class EntityRegistryHandler
 {
-    public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITIES,
-
-            MODID);
-
-
+    public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITIES, MODID);
     public static final RegistryObject<EntityType<EntityFurry>> ENTITY_FURRY = ENTITY_TYPES.register("entity_furry",
-
             () -> EntityType.Builder.of(EntityFurry::new, MobCategory.CREATURE).sized(0.9f,1.6f).setTrackingRange(30)
-
-                    .build(new ResourceLocation("mf:entity_furry").toString()));
+                    .build("mf:entity_furry"));
 
 }
 

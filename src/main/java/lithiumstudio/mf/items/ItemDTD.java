@@ -1,8 +1,8 @@
 package lithiumstudio.mf.items;
 
-import lithiumstudio.mf.init.TabRegistryHandler;
-import net.minecraft.resources.ResourceLocation;
+import lithiumstudio.mf.init.CreativeTab;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
@@ -10,11 +10,10 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraftforge.registries.ForgeRegistries;
 
 public class ItemDTD extends ArmorItem
 {
-    public ItemDTD(EquipmentSlot slot, Item.Properties properties) {
+    public ItemDTD(EquipmentSlot slot) {
         super(new ArmorMaterial() {
             @Override
             public int getDurabilityForSlot(EquipmentSlot slot) {
@@ -33,7 +32,7 @@ public class ItemDTD extends ArmorItem
 
             @Override
             public SoundEvent getEquipSound() {
-                return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_leather"));
+                return SoundEvents.ARMOR_EQUIP_LEATHER;
             }
 
             @Override
@@ -55,12 +54,12 @@ public class ItemDTD extends ArmorItem
             public float getKnockbackResistance() {
                 return 0f;
             }
-        }, slot, properties);
+        }, slot,  new Item.Properties().tab(CreativeTab.TAB_MINE_FURRY));
     }
 
     public static class Chestplate extends ItemDTD {
         public Chestplate() {
-            super(EquipmentSlot.CHEST, new Item.Properties().tab(TabRegistryHandler.TAB_MINE_FURRY));
+            super(EquipmentSlot.CHEST);
         }
 
         @Override
@@ -71,7 +70,7 @@ public class ItemDTD extends ArmorItem
 
     public static class Leggings extends ItemDTD {
         public Leggings() {
-            super(EquipmentSlot.LEGS, new Item.Properties().tab(TabRegistryHandler.TAB_MINE_FURRY));
+            super(EquipmentSlot.LEGS);
         }
 
         @Override
