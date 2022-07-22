@@ -49,7 +49,7 @@ public class EntityFurry extends PathfinderMob
     }
 
     @Override
-    public Packet<?> getAddEntityPacket() {
+    public @NotNull Packet<?> getAddEntityPacket() {
         return NetworkHooks.getEntitySpawningPacket(this);
     }
 
@@ -59,8 +59,8 @@ public class EntityFurry extends PathfinderMob
         super.registerGoals();
         this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
             @Override
-            protected double getAttackReachSqr(LivingEntity entity) {
-                return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+            protected double getAttackReachSqr(@NotNull LivingEntity entity) {
+                return 4.0f + entity.getBbWidth() * entity.getBbWidth();
             }
         });
         this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));

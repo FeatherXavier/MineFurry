@@ -16,7 +16,7 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 
 
-version = '0.0-22.7.1-40.1.58-coRelease'
+version = '0.1-22.7.22-40.1.58-Alpha'
 group = 'lithiumstudio.mf' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'MineFurry'
 
