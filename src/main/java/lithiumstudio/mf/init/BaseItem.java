@@ -1,15 +1,13 @@
-package lithiumstudio.mf.items;
+package lithiumstudio.mf.init;
 
-import lithiumstudio.mf.init.CreativeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 
-public class ItemTape extends Item
+public class BaseItem extends Item
 {
-    public ItemTape()
+    public BaseItem()
     {
         super(new Properties().tab(CreativeTabs.TAB_MINE_FURRY).stacksTo(64).rarity(Rarity.COMMON));
-
     }
-}
 
+}

@@ -2,10 +2,8 @@ package lithiumstudio.mf.init;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class TabRegistryHandler
+public class CreativeTabs
 {
     public static CreativeModeTab TAB_MINE_FURRY;
     public static CreativeModeTab RECORD_MINE_FURRY;

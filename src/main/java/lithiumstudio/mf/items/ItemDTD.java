@@ -1,6 +1,6 @@
 package lithiumstudio.mf.items;
 
-import lithiumstudio.mf.init.TabRegistryHandler;
+import lithiumstudio.mf.init.CreativeTabs;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.Entity;
@@ -60,7 +60,7 @@ public class ItemDTD extends ArmorItem
 
     public static class Chestplate extends ItemDTD {
         public Chestplate() {
-            super(EquipmentSlot.CHEST, new Item.Properties().tab(TabRegistryHandler.TAB_MINE_FURRY));
+            super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeTabs.TAB_MINE_FURRY));
         }
 
         @Override
@@ -71,7 +71,7 @@ public class ItemDTD extends ArmorItem
 
     public static class Leggings extends ItemDTD {
         public Leggings() {
-            super(EquipmentSlot.LEGS, new Item.Properties().tab(TabRegistryHandler.TAB_MINE_FURRY));
+            super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeTabs.TAB_MINE_FURRY));
         }
 
         @Override

@@ -3,7 +3,7 @@ package lithiumstudio.mf;
 import com.mojang.logging.LogUtils;
 import lithiumstudio.mf.init.EntityRegistryHandler;
 import lithiumstudio.mf.init.ItemRegistryHandler;
-import lithiumstudio.mf.init.TabRegistryHandler;
+import lithiumstudio.mf.init.CreativeTabs;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -33,7 +33,7 @@ public class MineFurry
 
         ItemRegistryHandler.REGISTRY.register(bus);
 
-        TabRegistryHandler.load();
+        CreativeTabs.load();
 
         EntityRegistryHandler.ENTITY_TYPES.register(bus);
 

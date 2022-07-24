@@ -1,22 +1,14 @@
 package lithiumstudio.mf.items;
 
-import lithiumstudio.mf.init.TabRegistryHandler;
-import net.minecraft.client.resources.language.I18n;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextComponent;
+import lithiumstudio.mf.init.CreativeTabs;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.Level;
-
-import java.util.List;
 
 public class ItemCloth extends Item
 {
     public ItemCloth()
     {
-        super(new Properties().tab(TabRegistryHandler.TAB_MINE_FURRY).stacksTo(64).rarity(Rarity.COMMON));
+        super(new Properties().tab(CreativeTabs.TAB_MINE_FURRY).stacksTo(64).rarity(Rarity.COMMON));
 
     }
 /*
