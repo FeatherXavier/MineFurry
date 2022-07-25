@@ -12,5 +12,6 @@
   "itemGroup.record_mine_furry": "Mine Furry-Records",
   "item.cloth.descr": "Huh?",
   "item.glue.descr": "Sticky",
-  "item.fur.descr": "Furry, that's great"
+  "item.fur.descr": "Furry, that's great",
+  "item.entity_furry_egg": "Spawns Furry"
 }

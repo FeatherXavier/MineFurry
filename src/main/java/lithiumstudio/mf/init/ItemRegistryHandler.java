@@ -2,7 +2,9 @@ package lithiumstudio.mf.init;
 
 import lithiumstudio.mf.MineFurry;
 import lithiumstudio.mf.items.*;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -18,4 +20,6 @@ public class ItemRegistryHandler
     public static final RegistryObject<Item> ITEM_FUR_FABRIC = REGISTRY.register("fur_fabric",FurFabric::new);
     public static final RegistryObject<Item> DTD_BODY = REGISTRY.register("dtd_body",ItemDTD.Chestplate::new);
     public static final RegistryObject<Item> DTD_LEGS = REGISTRY.register("dtd_legs",ItemDTD.Leggings::new);
+    public static final RegistryObject<Item> ENTITY_FURRY = REGISTRY.register("entity_furry_egg",
+            () -> new ForgeSpawnEggItem(EntityRegistryHandler.ENTITY_FURRY, -1, -43088, new Item.Properties().tab(CreativeTabs.TAB_MINE_FURRY)));
 }

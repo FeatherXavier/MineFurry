@@ -36,8 +36,6 @@ public class MineFurry
         CreativeTabs.load();
 
         EntityRegistryHandler.ENTITY_TYPES.register(bus);
-
-
     }
 
     private void setup(final FMLCommonSetupEvent event)
@@ -47,14 +45,4 @@ public class MineFurry
         LOGGER.info("Warning! This mod is still in alpha progress!");
     }
 
-    @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-    public static class RegistryEvents
-    {
-        @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent)
-        {
-            // Register a new block here
-            LOGGER.info("uwu");
-        }
-    }
 }
