@@ -1,10 +1,13 @@
 package lithiumstudio.mf.init;
 
+import lithiumstudio.mf.exception.UnknownPictureException;
 import net.minecraft.world.entity.decoration.Motive;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.NotNull;
+
+import java.io.FileNotFoundException;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PaintingsRegistryHandler
@@ -27,5 +30,6 @@ public class PaintingsRegistryHandler
         event.getRegistry().register(new Motive(80, 64).setRegistryName("img_0012"));
         event.getRegistry().register(new Motive(32, 48).setRegistryName("img_0013"));
         event.getRegistry().register(new Motive(32, 32).setRegistryName("img_0014"));
+
     }
 }

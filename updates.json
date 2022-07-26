@@ -1,0 +1,10 @@
+{
+  "homepage": "https://github.com/Lithiumstudio/MineFurry",
+  "1.18.2": {
+    "0.0": "Nan"
+  },
+  "promos": {
+    "1.18.2": "0.0",
+    "1.18": "0.0"
+  }
+}
