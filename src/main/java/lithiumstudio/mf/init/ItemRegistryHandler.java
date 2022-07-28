@@ -11,6 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ItemRegistryHandler
 {
+
     public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, MineFurry.MODID);
     public static final RegistryObject<Item> ITEM_FUR = REGISTRY.register("item_fur", ItemFur::new);
     public static final RegistryObject<Item> ITEM_GLUE = REGISTRY.register("item_glue", ItemGlue::new);

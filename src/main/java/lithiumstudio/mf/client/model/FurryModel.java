@@ -15,7 +15,7 @@ import static lithiumstudio.mf.MineFurry.MODID;
 
 
 public class FurryModel<T extends Entity> extends EntityModel<T> {
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(MODID, "entity_furry"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(MODID,"entities"), "entity_furry");
 	private final ModelPart Legs;
 	private final ModelPart Arms;
 	private final ModelPart Head;

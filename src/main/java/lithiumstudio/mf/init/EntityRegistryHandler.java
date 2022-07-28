@@ -1,5 +1,6 @@
 package lithiumstudio.mf.init;
 
+import com.mojang.logging.LogUtils;
 import lithiumstudio.mf.entities.EntityFurry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.PathfinderMob;
@@ -18,6 +19,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import lithiumstudio.mf.MineFurry;
+import org.slf4j.Logger;
 
 import static lithiumstudio.mf.MineFurry.MODID;
 
@@ -29,13 +31,11 @@ public class EntityRegistryHandler
 
             MODID);
 
-
     public static final RegistryObject<EntityType<EntityFurry>> ENTITY_FURRY = ENTITY_TYPES.register("entity_furry",
 
             () -> EntityType.Builder.of(EntityFurry::new, MobCategory.CREATURE).sized(0.9f,1.6f).setTrackingRange(30)
 
                     .build(new ResourceLocation("mf:entity_furry").toString()));
-
 }
 
 

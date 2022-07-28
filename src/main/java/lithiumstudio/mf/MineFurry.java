@@ -20,7 +20,7 @@ public class MineFurry
 {
     public static final String MODID = "mf";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public MineFurry()
     {

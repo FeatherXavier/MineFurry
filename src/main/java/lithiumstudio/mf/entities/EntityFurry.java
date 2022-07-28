@@ -2,7 +2,6 @@ package lithiumstudio.mf.entities;
 
 import net.minecraft.world.entity.*;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

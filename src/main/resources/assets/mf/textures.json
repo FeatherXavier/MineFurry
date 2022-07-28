@@ -1,9 +1,9 @@
 {
-  "fur_suit": {
+  "entity_furry": {
     "category": "texture",
     "textures": [
       {
-        "name": "mf:fur_suit"
+        "name": "mf:entity_furry"
       }
     ]
   }
