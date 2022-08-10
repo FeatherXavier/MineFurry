@@ -2,7 +2,6 @@ package lithiumstudio.mf.init;
 
 import lithiumstudio.mf.MineFurry;
 import lithiumstudio.mf.items.*;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,6 +17,7 @@ public class ItemRegistryHandler
     public static final RegistryObject<Item> ITEM_CLOTH = REGISTRY.register("item_cloth", ItemCloth::new);
     public static final RegistryObject<Item> DUCT_TAPE = REGISTRY.register("duct_tape", ItemTape::new);
     public static final RegistryObject<Item> RECORD_BE_AWARE_OF_FURRIES = REGISTRY.register("be_aware_of_furries", RecordBeAwareOfFurries::new);
+    public static final RegistryObject<Item> RECORD_CHANGED_THE_LIBRARY = REGISTRY.register("changed_the_library", RecordChangedTheLibrary::new);
     public static final RegistryObject<Item> ITEM_FUR_FABRIC = REGISTRY.register("fur_fabric",FurFabric::new);
     public static final RegistryObject<Item> DTD_BODY = REGISTRY.register("dtd_body",ItemDTD.Chestplate::new);
     public static final RegistryObject<Item> DTD_LEGS = REGISTRY.register("dtd_legs",ItemDTD.Leggings::new);

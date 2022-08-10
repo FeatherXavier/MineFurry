@@ -7,5 +7,14 @@
         "stream": true
       }
     ]
+  },
+  "changed_the_library": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "mf:changed_the_library",
+        "stream": true
+      }
+    ]
   }
 }

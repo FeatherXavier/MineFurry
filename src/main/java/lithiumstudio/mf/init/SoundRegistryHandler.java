@@ -19,6 +19,7 @@ public class SoundRegistryHandler
         static
         {
             REGISTRY.put(new ResourceLocation("mf", "be_aware_of_furries"), new SoundEvent(new ResourceLocation("mf", "be_aware_of_furries")));
+            REGISTRY.put(new ResourceLocation("mf", "changed_the_library"), new SoundEvent(new ResourceLocation("mf", "changed_the_library")));
         }
 
         @SubscribeEvent

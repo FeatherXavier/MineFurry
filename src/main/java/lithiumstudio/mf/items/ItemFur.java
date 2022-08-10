@@ -1,7 +1,8 @@
 package lithiumstudio.mf.items;
 
 import lithiumstudio.mf.init.CreativeTabs;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 
 public class ItemFur extends Item
 {

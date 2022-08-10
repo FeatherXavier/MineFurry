@@ -13,5 +13,7 @@
   "item.cloth.descr": "Huh?",
   "item.glue.descr": "Sticky",
   "item.fur.descr": "Furry, that's great",
-  "item.mf.entity_furry_egg": "Spawns Furry"
+  "item.mf.entity_furry_egg": "Spawns Furry",
+  "item.mf.changed_the_library": "Record",
+  "item.mf.changed_the_library.desc": "噬子-The Library(Changed OST)"
 }
