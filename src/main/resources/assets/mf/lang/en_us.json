@@ -15,5 +15,9 @@
   "item.fur.descr": "Furry, that's great",
   "item.mf.entity_furry_egg": "Spawns Furry",
   "item.mf.changed_the_library": "Record",
-  "item.mf.changed_the_library.desc": "噬子-The Library(Changed OST)"
+  "item.mf.changed_the_library.desc": "噬子-The Library(Changed OST)",
+  "item.mf.changed_finale": "Record",
+  "item.mf.changed_finale.desc": "噬子-最终章(Changed OST)",
+  "item.mf.changed_white_forest": "Record",
+  "item.mf.changed_white_forest.desc": "噬子-白胶森林(Changed OST)"
 }

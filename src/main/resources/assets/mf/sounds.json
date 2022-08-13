@@ -16,5 +16,23 @@
         "stream": true
       }
     ]
+  },
+  "changed_finale": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "mf:changed_finale",
+        "stream": true
+      }
+    ]
+  },
+  "changed_white_forest": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "mf:changed_white_forest",
+        "stream": true
+      }
+    ]
   }
 }

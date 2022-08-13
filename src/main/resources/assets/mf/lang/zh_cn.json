@@ -15,6 +15,10 @@
   "item.fur.descr": "毛茸茸的，好棒",
   "item.mf.entity_furry_egg": "生成 毛茸茸",
   "item.mf.changed_the_library": "唱片",
-  "item.mf.changed_the_library.desc": "噬子-The Library(Changed OST)"
+  "item.mf.changed_the_library.desc": "噬子-普罗的图书馆(Changed OST)",
+  "item.mf.changed_finale": "唱片",
+  "item.mf.changed_finale.desc": "噬子-最终章(Changed OST)",
+  "item.mf.changed_white_forest": "唱片",
+  "item.mf.changed_white_forest.desc": "噬子-白胶森林(Changed OST)"
 }
 
