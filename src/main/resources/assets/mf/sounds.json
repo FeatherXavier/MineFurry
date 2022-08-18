@@ -34,5 +34,14 @@
         "stream": true
       }
     ]
+  },
+  "cieoss": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "mf:cieoss",
+        "stream": true
+      }
+    ]
   }
 }

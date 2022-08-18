@@ -3,6 +3,7 @@ package lithiumstudio.mf.entities;
 import lithiumstudio.mf.init.EntityRegistryHandler;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.damagesource.DamageSource;
@@ -14,8 +15,10 @@ import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -24,18 +27,25 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib3.core.IAnimatable;
+import software.bernie.geckolib3.core.manager.AnimationData;
+import software.bernie.geckolib3.core.manager.AnimationFactory;
 
 import static lithiumstudio.mf.init.EntityRegistryHandler.ENTITY_FURRY;
 
 
 @Mod.EventBusSubscriber
-public class EntityFurry extends PathfinderMob
+public class EntityFurry extends Animal implements IAnimatable
 {
 
     @SubscribeEvent
     public static void addLivingEntityToBiomes(BiomeLoadingEvent event)
     {
-        event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ENTITY_FURRY.get(), 1, 1, 2));
+        if (event.getCategory() == Biome.BiomeCategory.MOUNTAIN || event.getCategory() == Biome.BiomeCategory.EXTREME_HILLS || event.getCategory() == Biome.BiomeCategory.PLAINS)
+        {
+            event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ENTITY_FURRY.get(), 1, 1, 2));
+        }
     }
 
     public EntityFurry(EntityType<EntityFurry> type, Level world)
@@ -68,23 +78,22 @@ public class EntityFurry extends PathfinderMob
 
     @Override
     public @NotNull MobType getMobType() {
-        return MobType.UNDEFINED;
+        return MobType.ARTHROPOD;
     }
 
     @Override
     public SoundEvent getHurtSound(@NotNull DamageSource ds) {
-        return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+        return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.wolf.hurt"));
     }
 
     @Override
     public SoundEvent getDeathSound() {
-        return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+        return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.wolf.death"));
     }
 
     public static void init() {
         SpawnPlacements.register(EntityRegistryHandler.ENTITY_FURRY.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                (entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
-                        && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+                Mob::checkMobSpawnRules);
     }
 
     public static AttributeSupplier.Builder createAttributes() {
@@ -94,6 +103,22 @@ public class EntityFurry extends PathfinderMob
         builder = builder.add(Attributes.ARMOR, 0);
         builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
         return builder;
+    }
+
+    @Nullable
+    @Override
+    public AgeableMob getBreedOffspring(ServerLevel p_146743_, AgeableMob p_146744_) {
+        return null;
+    }
+
+    @Override
+    public void registerControllers(AnimationData data) {
+
+    }
+
+    @Override
+    public AnimationFactory getFactory() {
+        return null;
     }
 }
 

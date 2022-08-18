@@ -20,6 +20,7 @@ public class ItemRegistryHandler
     public static final RegistryObject<Item> RECORD_CHANGED_THE_LIBRARY = REGISTRY.register("changed_the_library", RecordChangedTheLibrary::new);
     public static final RegistryObject<Item> RECORD_CHANGED_FINALE = REGISTRY.register("changed_finale", RecordChangedFinale::new);
     public static final RegistryObject<Item> RECORD_CHANGED_WHITE_FOREST = REGISTRY.register("changed_white_forest", RecordChangedWhiteForest::new);
+    public static final RegistryObject<Item> RECORD_CIEOSS = REGISTRY.register("cieoss", RecordCieoss::new);
     public static final RegistryObject<Item> ITEM_FUR_FABRIC = REGISTRY.register("fur_fabric",FurFabric::new);
     public static final RegistryObject<Item> DTD_BODY = REGISTRY.register("dtd_body",ItemDTD.Chestplate::new);
     public static final RegistryObject<Item> DTD_LEGS = REGISTRY.register("dtd_legs",ItemDTD.Leggings::new);
