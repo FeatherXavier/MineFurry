@@ -1,9 +1,12 @@
 package lithiumstudio.mf;
 
 import com.mojang.logging.LogUtils;
+import lithiumstudio.mf.client.renderer.EntityFurryRenderer;
 import lithiumstudio.mf.init.CreativeTabs;
 import lithiumstudio.mf.init.EntityRegistryHandler;
+import lithiumstudio.mf.init.EntityRenderer;
 import lithiumstudio.mf.init.ItemRegistryHandler;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -32,7 +35,9 @@ public class MineFurry
 
         CreativeTabs.load();
 
-        EntityRegistryHandler.ENTITY_TYPES.register(bus);
+        EntityRegistryHandler.register(bus);
+
+        //EntityRenderers.register(EntityRegistryHandler.ENTITY_FURRY.get(), EntityFurryRenderer::new);
     }
 
     private void setup(final FMLCommonSetupEvent event)
