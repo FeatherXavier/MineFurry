@@ -1,6 +1,5 @@
 package lithiumstudio.mf.init;
 
-import lithiumstudio.mf.MineFurry;
 import lithiumstudio.mf.entities.EntityFurry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;

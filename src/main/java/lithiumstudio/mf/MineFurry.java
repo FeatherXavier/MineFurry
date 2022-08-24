@@ -44,6 +44,7 @@ public class MineFurry
     {
         // some preinit code
         LOGGER.info("Mine Furry mod loaded.");
+        LOGGER.info("Hello, TNT!");
         LOGGER.warn("Warning! This mod is still in beta progress!");
     }
 
