@@ -39,14 +39,11 @@ public class PaintingsRegistryHandler
         event.getRegistry().register(new Motive(32, 48).setRegistryName("img_0013"));
         event.getRegistry().register(new Motive(32, 32).setRegistryName("img_0014"));
         event.getRegistry().register(new Motive(48, 64).setRegistryName("img_0015"));
-        event.getRegistry().register(new Motive(48, 32).setRegistryName("img_0016"));
-        event.getRegistry().register(new Motive(32, 48).setRegistryName("img_0017"));
-        event.getRegistry().register(new Motive(64, 48).setRegistryName("img_0018"));
-        event.getRegistry().register(new Motive(16, 32).setRegistryName("img_0019"));
+        event.getRegistry().register(new Motive(64, 48).setRegistryName("img_0016"));
+        event.getRegistry().register(new Motive(16, 32).setRegistryName("img_0017"));
+        event.getRegistry().register(new Motive(32, 32).setRegistryName("img_0018"));
+        event.getRegistry().register(new Motive(48, 80).setRegistryName("img_0019"));
         event.getRegistry().register(new Motive(32, 32).setRegistryName("img_0020"));
-        event.getRegistry().register(new Motive(80, 48).setRegistryName("img_0021"));
-        event.getRegistry().register(new Motive(48, 80).setRegistryName("img_0022"));
-        event.getRegistry().register(new Motive(32, 32).setRegistryName("img_0023"));
     }
 
     //长宽比16:9/21:9/32:9的放在这里
