@@ -1,4 +1,4 @@
-<img src="https://github.com/Lithiumstudio/MineFurry/blob/master/logo.png?raw=true">
+<img src="https://github.com/FeatherXavier/MineFurry/blob/master/logo.png?raw=true">
 <h1>一个福瑞控狂喜的模组</h1>
 <h4>MC版本：1.18.2</h4>
 <a>注意：所有的README都要看完哦</a>

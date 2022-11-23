@@ -19,7 +19,7 @@ apply plugin: 'net.minecraftforge.gradle'
 
 
 version = '-Alpha'
-group = 'lithiumstudio.mf' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = 'featherxavier.mf' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'MineFurry-0.1'
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
@@ -173,7 +173,7 @@ jar {
     manifest {
         attributes([
                 "Specification-Title"     : "mf",
-                "Specification-Vendor"    : "lithiumstudio",
+                "Specification-Vendor"    : "featherxavier",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,

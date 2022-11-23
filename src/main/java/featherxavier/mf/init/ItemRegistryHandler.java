@@ -2,7 +2,6 @@ package featherxavier.mf.init;
 
 import featherxavier.mf.items.*;
 import featherxavier.mf.MineFurry;
-import lithiumstudio.mf.items.*;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeSpawnEggItem;
