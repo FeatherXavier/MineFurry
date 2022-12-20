@@ -2,6 +2,7 @@ package featherxavier.mf.init;
 
 import featherxavier.mf.MineFurry;
 import featherxavier.mf.armor.FurSuit;
+import featherxavier.mf.blocks.ProtogenBlock;
 import featherxavier.mf.client.model.FurryModel;
 import featherxavier.mf.client.renderer.FurSuitRenderer;
 import featherxavier.mf.client.renderer.EntityFurryRenderer;
@@ -23,6 +24,8 @@ public class ClientModEventSubscriber
     public static void onRegisterLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
 
         event.registerLayerDefinition(FurryModel.LAYER_LOCATION, FurryModel::createBodyLayer);
+
+        ProtogenBlock.registerRenderLayer();
 
     }
 

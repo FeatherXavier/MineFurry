@@ -1,9 +1,14 @@
 package featherxavier.mf.init;
 
+import featherxavier.mf.blocks.ProtogenBlock;
 import featherxavier.mf.items.*;
 import featherxavier.mf.MineFurry;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -35,5 +40,9 @@ public class ItemRegistryHandler
             () -> new ItemFurSuit(ArmorMaterials.DTDMaterial, EquipmentSlot.LEGS, new Item.Properties()));
     public static final RegistryObject<ItemFurSuit> FURSUIT_BOOTS = REGISTRY.register("fur_suit_boots",
             () -> new ItemFurSuit(ArmorMaterials.DTDMaterial, EquipmentSlot.FEET, new Item.Properties()));
+
+    static BlockItem ProtogenBlockItem = new BlockItem(ProtogenBlock.byItem(new Item(new Item.Properties())),new BlockItem.Properties().tab(CreativeTabs.TAB_MINE_FURRY));
+
+    public static final RegistryObject<BlockItem> PROTOGEN_BLOCK = REGISTRY.register("protogen_block", () -> ProtogenBlockItem);
 
 }
